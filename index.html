@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>RLE to asgn4</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<p>
+			<label for="rle">
+				Enter/paste RLE:<br>
+				<textarea id="rle"></textarea>
+			</label>
+		</p>
+		<p>
+			<label for="padding">
+				Padding: <input type="text" id="padding" inputmode="numeric" pattern="[0-9]*" value="10">
+			</label>
+		</p>
+		<p>
+			<button id="convert">Convert</button>
+		</p>
+		<div id="output-section" style="display: none;">
+			<p>
+				<a href="" id="permalink">Permanent link to this pattern (click to copy)</a>
+			</p>
+			Preview:<br>
+			<canvas id="canvas" style="border: thin solid black;"></canvas><br>
+			Output:<br>
+			<button id="copy">Copy to clipboard</button><br>
+			<pre id="output"></pre>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
